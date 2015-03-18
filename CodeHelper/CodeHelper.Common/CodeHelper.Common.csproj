@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29F95DE0-C821-498A-883A-7CB123B696CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeHelper.Common</RootNamespace>
+    <AssemblyName>CodeHelper.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\EnumUtils.cs" />
+    <Compile Include="Extensions\ObjectExtension.cs" />
+    <Compile Include="Extensions\StringBuilderExtension.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="GenHelper.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="IndentStringBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ActiveObject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\AlignObjectsBottomHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\AlignObjectsCenteredHorizontalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\AlignObjectsCenteredVerticalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\AlignObjectsLeftHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\AlignObjectsRightHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\AlignObjectsTopHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Branch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\BringForwardHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\BringToFrontHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\BucketFill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Build.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\CenterAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ChartTimer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ClassShape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ClassShape2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ClosedFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Connection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Connector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ConnectorMover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\CSharpFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\CustomCommandbarImageList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DashStyles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DiagramControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DialHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DirectoryClosed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DirectoryOpened.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DrawEllipse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Drawing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\DrawRectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Edit_RedoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Edit_UndoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\EditData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\FinalState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\FontDialogHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Generate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\HistoryState.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\HomeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\idea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\InitialPointer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\InsertPicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\LayoutShapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\LeftAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\LineCaps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\LineWeights.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Model.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\NavBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\NavForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\NewDocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\OpenedFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\OpenFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\OrgChartHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PenDraw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Polygon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Port.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PrintPreview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PrintSetup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PropertiesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PublicMethod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\PublicProperty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Rebuild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\RelationshipsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\RepeatHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\RightAlignment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\RulerHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Schema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Scribble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\SendBackwardHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\SendToBackHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ShowConnectors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ShowGridlines2HS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\SPP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\StandardArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\State.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\StateChart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\StraightLines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ThumbnailView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Transtion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Ungroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\UpdateModel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Variable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ViewZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ViewZoomOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Warn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\workflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ZoomIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ZoomMarquee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\ZoomOut.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+﻿<SyntaxModes version="1.0">
+  
+      <Mode file       = "CSharp-Mode.xshd"
+     name       = "TSQL"
+         extensions = ".cs"/>
+
+</SyntaxModes>

@@ -1,0 +1,10 @@
+D:\SourceControl\amb4114_view\ast\new_oa\src\Core\Output\Motorola.ZCH49.OASystem.Domain.dll
+D:\SourceControl\amb4114_view\ast\new_oa\src\Core\Output\Motorola.ZCH49.OASystem.Domain.pdb
+D:\SourceControl\amb4114_view\ast\new_oa\src\Core\Domain\Domain\obj\Debug\ResolveAssemblyReference.cache
+D:\SourceControl\amb4114_view\ast\new_oa\src\Core\Domain\Domain\obj\Debug\Motorola.ZCH49.OASystem.Domain.dll
+D:\SourceControl\amb4114_view\ast\new_oa\src\Core\Domain\Domain\obj\Debug\Motorola.ZCH49.OASystem.Domain.pdb
+D:\workspace\20140311\Core\Output\Motorola.ZCH49.OASystem.Domain.dll
+D:\workspace\20140311\Core\Output\Motorola.ZCH49.OASystem.Domain.pdb
+D:\workspace\20140311\Core\Domain\Domain\obj\Debug\Motorola.ZCH49.OASystem.Domain.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Core\Domain\Domain\obj\Debug\Motorola.ZCH49.OASystem.Domain.dll
+D:\workspace\20140311\Core\Domain\Domain\obj\Debug\Motorola.ZCH49.OASystem.Domain.pdb

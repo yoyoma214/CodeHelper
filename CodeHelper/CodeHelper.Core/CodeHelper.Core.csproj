@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13A28FA1-1FAD-44AD-B27B-907206072C7D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeHelper.Core</RootNamespace>
+    <AssemblyName>CodeHelper.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.TextEditor">
+      <HintPath>..\ICSharpCode.TextEditor-master\Project\obj\Debug\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\..\..\lib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commond\BaseCommand.cs" />
+    <Compile Include="Commond\CommandHost.cs" />
+    <Compile Include="Commond\CommandHostManager.cs" />
+    <Compile Include="DbConfig\Connection.cs" />
+    <Compile Include="DbConfig\ConnectionManager.cs" />
+    <Compile Include="DbConfig\TableRelation.cs" />
+    <Compile Include="DbConfig\TableStatus.cs" />
+    <Compile Include="DbSchema\Access\AccessDatabaseSchema.cs" />
+    <Compile Include="DbSchema\Access\AccessHelper.cs" />
+    <Compile Include="DbSchema\Access\AccessSchemaProvider.cs" />
+    <Compile Include="DbSchema\Access\AccessTableSchema.cs" />
+    <Compile Include="DbSchema\ColumnSchema.cs" />
+    <Compile Include="DbSchema\DatabaseSchema.cs" />
+    <Compile Include="DbSchema\DbSchemaProvider\BaseDbSchemaProvider.cs" />
+    <Compile Include="DbSchema\DbSchemaProvider\IDbSchemaProvider.cs" />
+    <Compile Include="DbSchema\DbTypeProvider.cs" />
+    <Compile Include="DbSchema\Postgres\PostgresColumnSchema.cs" />
+    <Compile Include="DbSchema\Postgres\PostgresDatabaseSchema.cs" />
+    <Compile Include="DbSchema\Postgres\PostgresDbTypeProvider.cs" />
+    <Compile Include="DbSchema\Postgres\PostgresSchemaProvider.cs" />
+    <Compile Include="DbSchema\Postgres\PostgresSqlHelper.cs" />
+    <Compile Include="DbSchema\Postgres\PostgresTableSchema.cs" />
+    <Compile Include="DbSchema\SchemaUtility.cs" />
+    <Compile Include="DbSchema\SqlServer\SqlColumnSchema.cs" />
+    <Compile Include="DbSchema\SqlServer\SqlDatabaseSchema.cs" />
+    <Compile Include="DbSchema\SqlServer\SqlDbTypeProvider.cs" />
+    <Compile Include="DbSchema\SqlServer\SqlSchemaProvider.cs" />
+    <Compile Include="DbSchema\SqlServer\SqlTableSchema.cs" />
+    <Compile Include="DbSchema\TableSchema.cs" />
+    <Compile Include="EditorContext.cs" />
+    <Compile Include="EditorContextManager.cs" />
+    <Compile Include="Editor\EditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="Error\ErrorType.cs" />
+    <Compile Include="Error\ParseErrorInfo.cs" />
+    <Compile Include="Infrastructure\Command\IReceiver.cs" />
+    <Compile Include="Editor\BaseEditorController..cs" />
+    <Compile Include="Infrastructure\Command\IReceiverHolder.cs" />
+    <Compile Include="Infrastructure\Command\ReceiverBase.cs" />
+    <Compile Include="Infrastructure\IEditor.cs" />
+    <Compile Include="Infrastructure\IEditorController.cs" />
+    <Compile Include="Infrastructure\IFile.cs" />
+    <Compile Include="Infrastructure\Model\IModel.cs" />
+    <Compile Include="Infrastructure\Model\IModelManager.cs" />
+    <Compile Include="Parse\IGeneratorUtil.cs" />
+    <Compile Include="Parse\IParseModule.cs" />
+    <Compile Include="Parse\IParser.cs" />
+    <Compile Include="Parse\IToken.cs" />
+    <Compile Include="Parse\IWiseble.cs" />
+    <Compile Include="Parse\ModuleRelations\IDepencyManager.cs" />
+    <Compile Include="Parse\ModuleRelations\IModuleRelation.cs" />
+    <Compile Include="Parse\ModuleRelations\ModuleRelationBase.cs" />
+    <Compile Include="Parse\ParseInfo.cs" />
+    <Compile Include="Parse\ParseModuleBase.cs" />
+    <Compile Include="Parse\ParseResults\AtomTokenPair.cs" />
+    <Compile Include="Parse\ParseResults\AttributeInfo.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\Attribute.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\DataParse.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\DmModelDB.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\Field.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\Mapping.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\Model.cs" />
+    <Compile Include="Parse\ParseResults\DataModels\DbProgram.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Compare_Complex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Compare_Complex_Mix_And.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Compare_Complex_Mix_Or.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Compare_Complex_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Predication.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Expression\Binary_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Expression\Multiplicative_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Expression\Positive_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Expression\Unary_Operator.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Table_Field_Atom.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Join_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Select_Atom.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\SqlParse.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Top_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Union_Type.cs" />
+    <Compile Include="Parse\ParseResults\IPropertyInfo.cs" />
+    <Compile Include="Parse\ParseResults\PropertyInfoBase.cs" />
+    <Compile Include="Parse\ParseResults\TokenPair.cs" />
+    <Compile Include="Parse\ParseResults\TypeInfoBase.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Attribute.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Additive_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\And_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Argument_Expression_List.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Assignment_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Assignment_Operator.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Cast_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Conditional_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Constant.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Constant_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Equality_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Exclusive_Or_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Inclusive_Or_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Logical_And_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Logical_Or_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Lvalue.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Multiplicative_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part_Decrease.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part_Empty_Function.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part_Function.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part_Increase.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part_Index.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Postfix_Part_Long_Name.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Primary_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Relational_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Shift_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Unary_Expression.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Unary_Expression_One_Char.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Unary_Expression_Two_Char.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Expressions\Unary_Operator.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Field.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Model.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Model_Area.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Option.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Option_List.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\State.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Statements\AssginStatement.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Statements\Declare.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Statements\Declare_Statement.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Statements\Pull.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Statements\Push.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Statements\Statement.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\Type_Name.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\ViewModelDB.cs" />
+    <Compile Include="Parse\ParseResults\ViewModels\ViewModelDB.Wise.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Action.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\AfterAction.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Attribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\BeforeAction.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Clz.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Execute_Line.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Additive_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\And_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Argument_Expression_List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Assignment_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Assignment_Operator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\CaseExpression.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Cast_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Conditional_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Constant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Constant_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Creator.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Equality_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Exclusive_Or_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Inclusive_Or_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Logical_And_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Logical_Or_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Lvalue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Multiplicative_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part_Decrease.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part_Empty_Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part_Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part_Increase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part_Index.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Postfix_Part_Long_Name.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Primary_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Relational_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Shift_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Unary_Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Unary_Expression_One_Char.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Unary_Expression_Two_Char.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Expressions\Unary_Operator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Field.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Form.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Generic_Type.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Init.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Node.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Option.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Option_List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Parallel.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Program.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Ref_Workflow.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\State.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Statements\AssginStatement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Statements\BreakStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\ContinueStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\Declare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Statements\Declare_Statement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Statements\DoWhileStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\Expression_Statement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\ForEachStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\ForStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\GotoStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\IfStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\Statement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Statements\SwitchStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\Translation_statement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Statements\WhileStatement.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Translation.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Type_Name.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\Unit.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\Variable.cs" />
+    <Compile Include="Parse\ParseResults\Workflows\WorkflowDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\Workflows\WorkflowDB.Wise.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseResults\XmlModels\XmlAttributeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parse\ParseType.cs" />
+    <Compile Include="Parse\ParseResults\XmlModels\AttributeGroupInfo.cs" />
+    <Compile Include="Parse\ParseResults\XmlModels\ElementInfo.cs" />
+    <Compile Include="Parse\ParseResults\XmlModels\FieldGroupInfo.cs" />
+    <Compile Include="Parse\ParseResults\XmlModels\FieldInfo.cs" />
+    <Compile Include="Parse\ParseResults\XmlModels\XmModelDB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Dict.cs" />
+    <Compile Include="Services\GlobalService.cs" />
+    <Compile Include="Types\INameSpace.cs" />
+    <Compile Include="Types\ITypeInfo.cs" />
+    <Compile Include="UI\FindFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FindFrm.Designer.cs">
+      <DependentUpon>FindFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\LambdaComparer.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\FindFrm.resx">
+      <DependentUpon>FindFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Parse\ParseResults\DataViews\All_Field.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition_Clause_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\From_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\From_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Long_Name.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\DataViewDB.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Search_Option.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Select.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Select_Alias.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Select_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Select_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Table.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Table_Alias.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Table_All_Field.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Value.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Between_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Binary.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Binary_Compare.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Binary_Compare_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Binary_Operater.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Binary_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Compare_Complex_Mix_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\ConditionBase.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Condition_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Condition_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Condition_Option.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Exists\Existed_Compare.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\Exists\Existed_Compare_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\In\In_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\In\In_Expression_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\In\In_Keyword.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\In\In_List.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Condition\In\In_Right_Value.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Clause_Field.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Clause_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Else_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Have_Target_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_Have_Target_When_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Case_When_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Result_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\CaseWhen\Result_Expression_Prior.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Field_Regular.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Function_Field.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Function_Parameter.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Function_Parameter_List.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Table_Field.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Fields\Table_Field_Alias.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Grouping\Group_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Grouping\Group_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Grouping\Having_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Grouping\Having_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\All_Join.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Join.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Join_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Join_On_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Left_Join.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Left_Outer_Join.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Right_Join.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Joins\Right_Outer_Join.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Lists\Select_List.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Lists\Value_List.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Options\Option.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Options\Option_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Options\Option_List.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Options\Option_Name.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Options\Option_Value.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Orders\Order_Clause.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Orders\Order_Clause_Full.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Orders\Order_Expression.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Parameters\Parameter.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Parameters\Parameter_Name.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Parameters\Parameter_Options.cs" />
+    <Compile Include="Parse\ParseResults\DataViews\Parameters\Parameter_Value.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeHelper.Common\CodeHelper.Common.csproj">
+      <Project>{29F95DE0-C821-498A-883A-7CB123B696CC}</Project>
+      <Name>CodeHelper.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Persistence\CodeHelper.Persistence.csproj">
+      <Project>{22F158C2-4442-4456-BBC5-0FFE52DDC355}</Project>
+      <Name>CodeHelper.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Xml\CodeHelper.Xml.csproj">
+      <Project>{49EF1BD4-29B8-420D-8ABD-8B530FBCCD72}</Project>
+      <Name>CodeHelper.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Parse\ParseResults\WorkflowStates\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

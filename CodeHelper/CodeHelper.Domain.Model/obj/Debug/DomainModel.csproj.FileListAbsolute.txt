@@ -1,0 +1,4 @@
+D:\workspace\CodeHelper\Model\bin\Debug\DomainModel.dll
+D:\workspace\CodeHelper\Model\bin\Debug\DomainModel.pdb
+D:\workspace\CodeHelper\Model\obj\Debug\DomainModel.dll
+D:\workspace\CodeHelper\Model\obj\Debug\DomainModel.pdb

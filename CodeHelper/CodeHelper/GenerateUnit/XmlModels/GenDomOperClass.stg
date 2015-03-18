@@ -1,0 +1,138 @@
+﻿group GenDomOperClass;
+
+/*
+gen(model) ::= <<
+	asdasd
+	<model.NameSpace>
+>>
+*/
+
+gen(model,duck) ::= <<
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Xml;
+using CodeHelper.Xml.Extension;
+
+
+<model.UsingNameSpaces:{it|using <it>;<\n>}>
+namespace <model.NameSpace>
+{
+
+	<model.Elements.keys:{key|<element(model.Elements.(key))>};separator="\n">
+
+}
+	
+	
+>>
+
+ element(el,duck) ::= <<
+ 
+	public class <el.Name> : BaseNode
+	{
+		public <el.Name>() : base()
+		{
+		}
+
+		public <el.Name>(XmlNode dom) : base(dom)
+		{
+		}
+
+		public <el.Name>(Document document):base(document)
+        {
+        }
+
+		public override string XML_TAG_NAME
+        {
+            get
+            {
+                return "<el.Name>";
+            }
+            set
+            {
+                throw new Exception("cannot set");
+            }
+        }
+	<el.Attributes:{it | <attribute(it)> }>
+	<el.Fields:{it | <field(it)> }>		
+	}
+ >>
+
+ attribute(attr) ::= <<
+
+	public <attr.Type> <attr.Name>
+	{
+		get
+		{
+			return this.Dom.Attributes["<attr.Name>"].Value.ToT\<<attr.Type>\>();
+		}
+		set
+		{		
+			var attr = this.Dom.Attributes.OfType\<XmlAttribute>().FirstOrDefault(x => x.Name == "<attr.Name>");
+            if (attr == null)
+            {
+                attr = this.Dom.Attributes.Append(this.Dom.OwnerDocument.CreateAttribute("<attr.Name>"));                    
+            }
+            attr.Value = value.ToString();
+		}
+	}
+
+ >>
+
+ field(fld) ::= <<
+ <if(fld.IsGenricList)>
+
+ 	public <fld.TypeInfo.GenericParameterType.Name> Create<fld.TypeInfo.GenericParameterType.Name>()
+	{
+		return CreateNode\<<fld.TypeInfo.GenericParameterType.Name>\>();
+	}
+
+	public <fld.Type> <fld.Name>
+	{
+		get
+		{
+			var <fld.VariableName> = new <fld.Type>();
+			foreach(XmlNode node in this.Dom.ChildNodes)
+			{
+				<fld.VariableName>.Add(new <fld.GenericArgument>(node));
+			}
+			return <fld.VariableName>;
+		}
+		set
+		{
+			throw new Exception("cannot set");
+		}
+	}
+
+	<else>	
+
+	public <fld.Type> Create<fld.Type>()
+	{
+		return CreateNode\<<fld.Type>\>();
+	}
+            
+	public <fld.Type> <fld.Name>
+	{
+		get
+		{
+			<if(fld.Type.IsPrimitive)>
+			return this.Dom.Attributes["<fld.Name>"].ToT<fld.Type>();
+			<else>
+			foreach(XmlNode node in this.Dom.ChildNodes)
+			{
+				if (node.Name == ""){
+					return new <fld.Type>(node);
+				}
+			}
+			return null;
+			<endif>			
+		}
+		set
+		{			
+			this.<fld.Name>.RemoveSelf();
+			this.Dom.AppendChild(value.Dom);
+		}
+	}	
+	<endif>
+	>>

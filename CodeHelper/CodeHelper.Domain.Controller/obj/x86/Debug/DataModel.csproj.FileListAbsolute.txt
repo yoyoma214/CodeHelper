@@ -1,0 +1,9 @@
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\DataModel.Properties.Resources.resources
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\DataModel.csproj.GenerateResource.Cache
+D:\workspace\CodeHelper\DataModel\bin\Debug\DataModel.dll
+D:\workspace\CodeHelper\DataModel\bin\Debug\DataModel.pdb
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\DataModel.dll
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\DataModel.pdb
+D:\workspace\CodeHelper\DataModel\bin\Debug\Core.dll
+D:\workspace\CodeHelper\DataModel\bin\Debug\Core.pdb
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\DataModel.csprojResolveAssemblyReference.cache

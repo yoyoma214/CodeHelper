@@ -1,0 +1,12 @@
+E:\20140126\CodeHelper\Parser\obj\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\Output\CordeHelper.Parser.dll.config
+E:\20140126\CodeHelper\Output\CordeHelper.Parser.dll
+E:\20140126\CodeHelper\Output\CordeHelper.Parser.pdb
+E:\20140126\CodeHelper\Parser\obj\Debug\CordeHelper.Parser.dll
+E:\20140126\CodeHelper\Parser\obj\Debug\CordeHelper.Parser.pdb
+D:\workspace\CodeHelper\Output\CordeHelper.Parser.dll.config
+D:\workspace\CodeHelper\Output\CordeHelper.Parser.dll
+D:\workspace\CodeHelper\Output\CordeHelper.Parser.pdb
+D:\workspace\CodeHelper\Parser\obj\Debug\CordeHelper.Parser.csprojResolveAssemblyReference.cache
+D:\workspace\CodeHelper\Parser\obj\Debug\CordeHelper.Parser.dll
+D:\workspace\CodeHelper\Parser\obj\Debug\CordeHelper.Parser.pdb

@@ -1,0 +1,8 @@
+E:\20140126\CodeHelper\Core\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\Core\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\20140126\CodeHelper\Core\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\20140126\CodeHelper\Core\obj\x86\Debug\CordeHelper.Core.Properties.Resources.resources
+E:\20140126\CodeHelper\Output\CordeHelper.Core.dll
+E:\20140126\CodeHelper\Output\CordeHelper.Core.pdb
+E:\20140126\CodeHelper\Core\obj\x86\Debug\CordeHelper.Core.dll
+E:\20140126\CodeHelper\Core\obj\x86\Debug\CordeHelper.Core.pdb

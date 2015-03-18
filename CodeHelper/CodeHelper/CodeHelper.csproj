@@ -1,0 +1,1490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0AA31E9A-669E-40C4-A144-91CBD6B9FB12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeHelper</RootNamespace>
+    <AssemblyName>CodeHelper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\Bonus\ICO\073.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.4.0.16114, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DbOperation.cs" />
+    <Compile Include="Common\Helper.cs" />
+    <Compile Include="Configer.cs" />
+    <Compile Include="DataBase\EF\BaseNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\Association.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\AssociationSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\Dependent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\EntityContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\EntitySet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\EntityType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\Key.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\NavigationProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\Principal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\Property.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\PropertyRef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\ReferentialConstraint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\ConceptualModels\Schema.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\EFManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\AssociationSetMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\Condition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\EndProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\EntityContainerMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\EntitySetMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\EntityTypeMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\Mapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\MappingFragment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Mappings\ScalarProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\Relations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\Association.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\AssociationSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\Dependent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\EntityContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\EntitySet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\EntityType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\Key.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\Principal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\Property.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\PropertyRef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\ReferentialConstraint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\EF\StorageModels\Schema.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataBase\GenerateUnit\BaseGen.cs" />
+    <Compile Include="DataBase\GenerateUnit\BaseXSLTGen.cs" />
+    <Compile Include="DataBase\GenerateUnit\FieldView\EditItem.cs" />
+    <Compile Include="DataBase\GenerateUnit\FieldView\FilterItem.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenEF\GenEFEntity.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenEF\GenEFMap.cs" />
+    <Compile Include="DataBase\GenerateUnit\GeneratorUtil.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenExport\GenReportConfig.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenHandler\GenHandler.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenModel\GenModelFromSql.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenModel\GenModelFromTable.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenMVC\GenActions.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenAddView.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenConvertViewModelToWcfDto.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenConverWcfDtoTotViewMode.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenEditView.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenEditViewModel.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenListView.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenReadonlyView.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenTableHtml.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenViewModel.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenView\GenViewModel_EditPage.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenWcf\GenBaseCCFlowService.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenWcf\GenBaseService.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenWcf\GenConverDtoTotEF.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenWcf\GenConvertEFToDto.cs" />
+    <Compile Include="DataBase\GenerateUnit\GenWcf\GenDto.cs" />
+    <Compile Include="DataBase\GenerateUnit\IGenerate.cs" />
+    <Compile Include="DataBase\GenerateUnit\NewOA\GenIRepository.cs" />
+    <Compile Include="DataBase\GenerateUnit\NewOA\GenRepository.cs" />
+    <Compile Include="DataBase\GenerateUnit\NewOA\GenSpecification.cs" />
+    <Compile Include="DataBase\NodeFactory.cs" />
+    <Compile Include="DataBase\Sql\ResloveTableAgent.cs" />
+    <Compile Include="DataBase\Sql\SqlParser.cs" />
+    <Compile Include="DataBase\UI\SelectConnectionFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\SelectConnectionFrm.Designer.cs">
+      <DependentUpon>SelectConnectionFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentViewManager.cs" />
+    <Content Include="GenerateUnit\XmlModels\GenSLDomOperClass.gen.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Extensions\ListExtention.cs" />
+    <Compile Include="GenerateUnit\XmlModels\GenerateConfigurationSection.cs" />
+    <Compile Include="GenerateUnit\XmlModels\GenSLDomOperClass.cs" />
+    <Compile Include="Items\DataBase\Ajaxs\AjaxFolderNode.cs" />
+    <Compile Include="Items\DataBase\Ajaxs\AjaxNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ColumnNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ColumnSetNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ConnectionNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ConnectionPackageNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\DataTableSetNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\FieldNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\DBModelNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ModelSetNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\DBProjectNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\QueryNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\SqlNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\SqlPackageNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\TableMappingNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\TableNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\TablePackageNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\TableRepositoryNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\TableStatusNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ViewNode.cs" />
+    <Compile Include="Items\DataBase\DBItems\ViewPackageNode.cs" />
+    <Compile Include="Items\DataBase\Forms\FormFolderNode.cs" />
+    <Compile Include="Items\DataBase\Forms\FormNode.cs" />
+    <Compile Include="Items\DataBase\Postgres\PostgresColumnNode.cs" />
+    <Compile Include="Items\DataBase\Postgres\PostgresFieldNode.cs" />
+    <Compile Include="Items\DataBase\Services\ServiceFolderNode.cs" />
+    <Compile Include="Items\DataBase\Services\ServiceNode.cs" />
+    <Compile Include="Items\DataBase\SqlServer\SqlColumnNode.cs" />
+    <Compile Include="Items\DataBase\SqlServer\SqlFieldNode.cs" />
+    <Compile Include="MainFrm.Receiveier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateUnit\BaseGen.cs" />
+    <Compile Include="GenerateUnit\Duck.cs" />
+    <Compile Include="GenerateUnit\GeneratorUtil.cs" />
+    <Compile Include="GenerateUnit\XmlModels\GenDomOperClass.cs" />
+    <Compile Include="Items\BaseNode.cs" />
+    <Compile Include="Items\BaseNodeCollection.cs" />
+    <Compile Include="Items\DataModel\DataModelNode.cs" />
+    <Compile Include="Items\DataModel\DataModelSetNode.cs" />
+    <Compile Include="Items\FolderNode.cs" />
+    <Compile Include="Items\IModel.cs" />
+    <Compile Include="Items\NodeFactory.cs" />
+    <Compile Include="Items\DesignProjectNode.cs" />
+    <Compile Include="Items\TreeEventSource.cs" />
+    <Compile Include="Items\XmlModel\XmlModelNode.cs" />
+    <Compile Include="Items\XmlModel\XmlModelSetNode.cs" />
+    <Compile Include="Items\ModelNode.cs" />
+    <Compile Include="MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OleDbHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\GlobalService.cs" />
+    <Compile Include="Services\Repository.cs" />
+    <Compile Include="UI\CreatePorjectFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreatePorjectFrm.Designer.cs">
+      <DependentUpon>CreatePorjectFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\ConnectionEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\ConnectionEditFrm.Designer.cs">
+      <DependentUpon>ConnectionEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\CreatePorjectFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\CreatePorjectFrm.Designer.cs">
+      <DependentUpon>CreatePorjectFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\EditModelFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\EditModelFrm.Designer.cs">
+      <DependentUpon>EditModelFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\EditSqlStatementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\EditSqlStatementFrm.Designer.cs">
+      <DependentUpon>EditSqlStatementFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\FormViewFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\FormViewFrm.Designer.cs">
+      <DependentUpon>FormViewFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\MainFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\OpenProjectFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\OpenProjectFrm.Designer.cs">
+      <DependentUpon>OpenProjectFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\OutputFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\OutputFrm.Designer.cs">
+      <DependentUpon>OutputFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\PropertyGrids\ConnectionListAttribute.cs" />
+    <Compile Include="DataBase\UI\PropertyGrids\MyConverter.cs" />
+    <Compile Include="DataBase\UI\RenameFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\RenameFrm.Designer.cs">
+      <DependentUpon>RenameFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\ServiceFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\ServiceFrm.Designer.cs">
+      <DependentUpon>ServiceFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\ShowCodeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\ShowCodeFrm.Designer.cs">
+      <DependentUpon>ShowCodeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\SqlEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\SqlEditFrm.Designer.cs">
+      <DependentUpon>SqlEditFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\TableRefMappingSettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\TableRefMappingSettingFrm.Designer.cs">
+      <DependentUpon>TableRefMappingSettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\TableRepositorySettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\TableRepositorySettingFrm.Designer.cs">
+      <DependentUpon>TableRepositorySettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\UI\TableStatusSettingFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\UI\TableStatusSettingFrm.Designer.cs">
+      <DependentUpon>TableStatusSettingFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockPanels\FileTabPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\ErrorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\ErrorPanel.Receiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\FileTabPanel.Receiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\ProjectPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\ProjectPanel.Receiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\PropertyPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockPanels\PropertyPanel.Receiver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GenerateOutputFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GenerateOutputFrm.Designer.cs">
+      <DependentUpon>GenerateOutputFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NewFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NewFrm.Designer.cs">
+      <DependentUpon>NewFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OpenProjectFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OpenProjectFrm.Designer.cs">
+      <DependentUpon>OpenProjectFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RenameFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\RenameFrm.Designer.cs">
+      <DependentUpon>RenameFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ShowCodeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ShowCodeFrm.Designer.cs">
+      <DependentUpon>ShowCodeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSpace.cs" />
+    <EmbeddedResource Include="DataBase\UI\SelectConnectionFrm.resx">
+      <DependentUpon>SelectConnectionFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\CreatePorjectFrm.resx">
+      <DependentUpon>CreatePorjectFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\ConnectionEditFrm.resx">
+      <DependentUpon>ConnectionEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\CreatePorjectFrm.resx">
+      <DependentUpon>CreatePorjectFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\EditModelFrm.resx">
+      <DependentUpon>EditModelFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\EditSqlStatementFrm.resx">
+      <DependentUpon>EditSqlStatementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\FormViewFrm.resx">
+      <DependentUpon>FormViewFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\OpenProjectFrm.resx">
+      <DependentUpon>OpenProjectFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\OutputFrm.resx">
+      <DependentUpon>OutputFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\RenameFrm.resx">
+      <DependentUpon>RenameFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\ServiceFrm.resx">
+      <DependentUpon>ServiceFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\ShowCodeFrm.resx">
+      <DependentUpon>ShowCodeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\SqlEditFrm.resx">
+      <DependentUpon>SqlEditFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\TableRefMappingSettingFrm.resx">
+      <DependentUpon>TableRefMappingSettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\TableRepositorySettingFrm.resx">
+      <DependentUpon>TableRepositorySettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\UI\TableStatusSettingFrm.resx">
+      <DependentUpon>TableStatusSettingFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockPanels\ErrorPanel.resx">
+      <DependentUpon>ErrorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockPanels\FileTabPanel.resx">
+      <DependentUpon>FileTabPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockPanels\ProjectPanel.resx">
+      <DependentUpon>ProjectPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockPanels\PropertyPanel.resx">
+      <DependentUpon>PropertyPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GenerateOutputFrm.resx">
+      <DependentUpon>GenerateOutputFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NewFrm.resx">
+      <DependentUpon>NewFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OpenProjectFrm.resx">
+      <DependentUpon>OpenProjectFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RenameFrm.resx">
+      <DependentUpon>RenameFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ShowCodeFrm.resx">
+      <DependentUpon>ShowCodeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GenerateUnit\XmlModels\GenDomOperClass.stg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GenerateUnit\XmlModels\GenDomOperClass.gen.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\001.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\002.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\003.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\004.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\005.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\006.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\007.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\008.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\009.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\010.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\011.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\012.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\013.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\014.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\015.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\016.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\017.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\018.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\019.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\020.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\021.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\022.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\023.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\024.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\025.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\026.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\027.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\028.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\029.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\030.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\031.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\032.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\033.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\034.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\035.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\036.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\037.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\038.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\039.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\040.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\041.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\042.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\043.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\044.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\045.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\046.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\047.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\048.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\049.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\050.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\051.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\052.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\053.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\054.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\055.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\056.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\057.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\058.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\059.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\060.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\061.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\062.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\063.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\064.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\065.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\066.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\067.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\068.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\069.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\070.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\071.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\072.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\073.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\074.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\075.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\076.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\077.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\078.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\079.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\080.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\081.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\082.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\083.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\084.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\085.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\086.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\087.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\088.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\089.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\090.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\091.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\092.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\093.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\094.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\095.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\096.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\097.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\098.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\099.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\100.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\101.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\102.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\103.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\104.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\105.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\106.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\107.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\108.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\109.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\110.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\111.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\112.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\113.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\114.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\115.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\116.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\117.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\118.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\119.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\120.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\121.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\122.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\123.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\124.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\125.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\126.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\127.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\128.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\129.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\130.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\131.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\132.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\133.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\134.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\135.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\136.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\137.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\138.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\139.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\140.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\141.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\142.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\143.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\144.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\145.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\146.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\147.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\148.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\149.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\150.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\151.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\152.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\153.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\154.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\155.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\156.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\157.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\158.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\159.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\160.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\161.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\162.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\163.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\164.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\165.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\166.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\167.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\168.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\169.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\170.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\171.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\172.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\173.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\174.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\175.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\176.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\177.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\178.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\179.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\180.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\181.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\182.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\183.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\184.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\185.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\186.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\187.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\188.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\189.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\190.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\191.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\192.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\193.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\194.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\195.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\196.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\197.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\198.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\199.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\200.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\201.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\202.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\203.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\204.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\205.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\206.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\207.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\208.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\209.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\210.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\211.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\212.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\213.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\214.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\215.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\216.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\217.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\218.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\219.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\220.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\221.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\222.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\223.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\224.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\225.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\226.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\227.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\228.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\229.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\230.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\231.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\232.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\233.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\234.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\235.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\236.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\237.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\238.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\239.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\240.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\241.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\242.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\243.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\244.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\245.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\246.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\247.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\248.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\249.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\250.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\251.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\252.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\253.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\254.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\255.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\256.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\257.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\258.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\259.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\260.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\261.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\262.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\263.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\264.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\265.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\266.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\267.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\268.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\269.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\270.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\271.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\272.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\273.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\274.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\275.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\276.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\277.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\278.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\279.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\280.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\281.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\282.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\283.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\284.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bonus\ICO\285.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeHelper.AssembleLayer\CodeHelper.AssembleLayer.csproj">
+      <Project>{3A8BD873-E648-40EE-A5B9-A840876CB262}</Project>
+      <Name>CodeHelper.AssembleLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Commands\CodeHelper.Commands.csproj">
+      <Project>{78A7C237-0077-484D-8D67-128936BF23EA}</Project>
+      <Name>CodeHelper.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Common\CodeHelper.Common.csproj">
+      <Project>{29F95DE0-C821-498A-883A-7CB123B696CC}</Project>
+      <Name>CodeHelper.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Core\CodeHelper.Core.csproj">
+      <Project>{13A28FA1-1FAD-44AD-B27B-907206072C7D}</Project>
+      <Name>CodeHelper.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Domain.Controller\CodeHelper.Domain.Controller.csproj">
+      <Project>{E8EA832E-4252-4836-B9D0-F13C95534E6A}</Project>
+      <Name>CodeHelper.Domain.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Domain.Model\CodeHelper.Domain.Model.csproj">
+      <Project>{D330BE74-E61D-402A-A043-754621439EED}</Project>
+      <Name>CodeHelper.Domain.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Parser\CodeHelper.Parser.csproj">
+      <Project>{4CA0BF24-8318-45C0-A47A-0885BB6F74B0}</Project>
+      <Name>CodeHelper.Parser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Persistence\CodeHelper.Persistence.csproj">
+      <Project>{22F158C2-4442-4456-BBC5-0FFE52DDC355}</Project>
+      <Name>CodeHelper.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CodeHelper.Xml\CodeHelper.Xml.csproj">
+      <Project>{49EF1BD4-29B8-420D-8ABD-8B530FBCCD72}</Project>
+      <Name>CodeHelper.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICSharpCode.TextEditor-master\Project\ICSharpCode.TextEditor.csproj">
+      <Project>{E1BA3418-B337-45CE-8940-4C7262B39359}</Project>
+      <Name>ICSharpCode.TextEditor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

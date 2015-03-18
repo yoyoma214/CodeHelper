@@ -1,0 +1,10 @@
+E:\20140126\CodeHelper\Commands\obj\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\Output\CordeHelper.Commands.dll
+E:\20140126\CodeHelper\Output\CordeHelper.Commands.pdb
+E:\20140126\CodeHelper\Commands\obj\Debug\CordeHelper.Commands.dll
+E:\20140126\CodeHelper\Commands\obj\Debug\CordeHelper.Commands.pdb
+D:\workspace\CodeHelper\Output\CordeHelper.Commands.dll
+D:\workspace\CodeHelper\Output\CordeHelper.Commands.pdb
+D:\workspace\CodeHelper\Commands\obj\Debug\CordeHelper.Commands.dll
+D:\workspace\CodeHelper\Commands\obj\Debug\CordeHelper.Commands.pdb
+D:\workspace\CodeHelper\Commands\obj\Debug\CordeHelper.Commands.csprojResolveAssemblyReference.cache

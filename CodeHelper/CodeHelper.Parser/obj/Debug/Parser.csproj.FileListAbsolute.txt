@@ -1,0 +1,14 @@
+D:\workspace\CodeHelper\Parser\bin\Debug\Parser.dll.config
+D:\workspace\CodeHelper\Parser\bin\Debug\Parser.dll
+D:\workspace\CodeHelper\Parser\bin\Debug\Parser.pdb
+D:\workspace\CodeHelper\Parser\obj\Debug\Parser.dll
+D:\workspace\CodeHelper\Parser\obj\Debug\Parser.pdb
+E:\20140126\CodeHelper\Parser\bin\Debug\Parser.dll.config
+E:\20140126\CodeHelper\Parser\bin\Debug\Parser.dll
+E:\20140126\CodeHelper\Parser\bin\Debug\Parser.pdb
+E:\20140126\CodeHelper\Parser\obj\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\Parser\obj\Debug\Parser.dll
+E:\20140126\CodeHelper\Parser\obj\Debug\Parser.pdb
+E:\20140126\CodeHelper\Output\Parser.dll.config
+E:\20140126\CodeHelper\Output\Parser.dll
+E:\20140126\CodeHelper\Output\Parser.pdb

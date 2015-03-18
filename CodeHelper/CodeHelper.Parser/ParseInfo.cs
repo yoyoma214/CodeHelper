@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Core.Parser;
+
+namespace Parser
+{  
+    public class ParseInfo
+    {
+        public ParseType Type { get; set; }
+        public int Index { get; set; }
+        public string Content { get; set; }
+    }
+}

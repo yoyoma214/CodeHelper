@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+ <SyntaxDefinition name = "C#" extensions = ".xm">
+     <Properties>
+         <Property name="LineComment" value="//"/>
+     </Properties>
+     <Digits name = "Digits" bold = "false" italic = "false" color = "DarkBlue"/>
+     <RuleSets>
+         <RuleSet ignorecase="false">
+             <Delimiters>&amp;&lt;&gt;~!%^*()-+=|/#/{}[]:;"' ,    .?</Delimiters>
+            <Span name = "PreprocessorDirectives" rule = "PreprocessorSet" bold="false" italic="false" color="Green" stopateol = "true">
+                <Begin>#</Begin>
+           </Span>
+            <Span name = "BlockComment" rule = "CommentMarkerSet" bold = "false" italic = "false" color = "Green" stopateol = "false">
+                <Begin>/*</Begin>
+                <End>*/</End>
+            </Span>
+            <KeyWords name = "Punctuation" bold = "false" italic = "false" color = "DarkGreen">
+                <Key word = "?" />
+                <Key word = "," />
+                <Key word = "." />
+                <Key word = ";" />
+               <Key word = "(" />
+                <Key word = ")" />
+                <Key word = "[" />
+
+                <Key word = "&amp;" />
+              </KeyWords>
+          
+            <KeyWords name = "AccessKeywords" bold="true" italic="false" color="Black">
+                <Key word = "this" />
+                <Key word = "base" />
+            </KeyWords>
+            
+            <KeyWords name = "OperatorKeywords" bold="true" italic="false" color="DarkCyan">
+                <Key word = "as1" />
+                <Key word = "is" />
+                <Key word = "new" />
+                <Key word = "sizeof" />
+                <Key word = "typeof" />
+                <Key word = "true" />
+                <Key word = "false" />
+                <Key word = "stackalloc" />
+            </KeyWords>
+        </RuleSet>
+    </RuleSets>
+</SyntaxDefinition>

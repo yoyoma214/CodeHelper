@@ -1,0 +1,10 @@
+E:\20140126\CodeHelper\AssembleLayer\obj\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\Output\CordeHelper.AssembleLayer.dll
+E:\20140126\CodeHelper\Output\CordeHelper.AssembleLayer.pdb
+E:\20140126\CodeHelper\AssembleLayer\obj\Debug\CordeHelper.AssembleLayer.dll
+E:\20140126\CodeHelper\AssembleLayer\obj\Debug\CordeHelper.AssembleLayer.pdb
+D:\workspace\CodeHelper\Output\CordeHelper.AssembleLayer.dll
+D:\workspace\CodeHelper\Output\CordeHelper.AssembleLayer.pdb
+D:\workspace\CodeHelper\AssembleLayer\obj\Debug\CordeHelper.AssembleLayer.csprojResolveAssemblyReference.cache
+D:\workspace\CodeHelper\AssembleLayer\obj\Debug\CordeHelper.AssembleLayer.dll
+D:\workspace\CodeHelper\AssembleLayer\obj\Debug\CordeHelper.AssembleLayer.pdb

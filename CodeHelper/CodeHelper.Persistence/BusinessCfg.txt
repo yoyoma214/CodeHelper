@@ -1,0 +1,49 @@
+﻿namespace Generator;
+
+class BusinessCfg
+{
+	ServiceFolder ServiceFolder;
+	AjaxFolder AjaxFolder;
+	FormViewFolder FormViewFolder;
+}
+
+class Service
+{
+	attr string ConnectionString;
+	attr string Name;
+	attr string Code;
+}
+
+class Ajax
+{
+	attr string Name;
+	attr string Code;
+}
+
+class ServiceFolder
+{
+	attr string ConnectionString;
+ 	attr string Name;
+ 	List<ServiceFolder> ServiceFolders;
+ 	List<Service> Services; 
+}
+
+class AjaxFolder
+{
+	attr string Name;
+	List<AjaxFolder> AjaxFolders;
+	List<Ajax> Ajaxs;
+}
+
+class FormView
+{
+	attr string Name;
+	attr string Code;
+}
+
+class FormViewFolder
+{
+	attr string Name;
+	List<FormViewFolder> FormViewFolders;
+	List<FormView> FormViews;
+}

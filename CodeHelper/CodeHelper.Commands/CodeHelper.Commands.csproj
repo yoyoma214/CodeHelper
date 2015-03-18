@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{78A7C237-0077-484D-8D67-128936BF23EA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeHelper.Commands</RootNamespace>
+    <AssemblyName>CodeHelper.Commands</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\RenameModelCommand.cs" />
+    <Compile Include="Common\DeleteModelCommand.cs" />
+    <Compile Include="Common\DeleteFolderCommand.cs" />
+    <Compile Include="Common\OpenFileCommand.cs" />
+    <Compile Include="Common\CloseFileCommand.cs" />
+    <Compile Include="Common\PropertySelectCommand.cs" />
+    <Compile Include="DataModel\OpenDataModelCommand.cs" />
+    <Compile Include="DataModel\NewDataModelCommand.cs" />
+    <Compile Include="DataView\NewDataViewCommand.cs" />
+    <Compile Include="DataView\OpenDataViewCommand.cs" />
+    <Compile Include="OpenProjectCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\NewViewModelCommand.cs" />
+    <Compile Include="ViewModel\OpenViewModelCommand.cs" />
+    <Compile Include="WorkFlow\NewWorkFlowCommand.cs" />
+    <Compile Include="WorkFlow\OpenWorkFlowCommand.cs" />
+    <Compile Include="XmlModel\NewXmlModelCommand.cs" />
+    <Compile Include="XmlModel\OpenXmlModelCommand.cs" />
+    <Compile Include="CloseProjectCommand.cs" />
+    <Compile Include="ExitProcessCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NewProjectCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeHelper.Core\CodeHelper.Core.csproj">
+      <Project>{13A28FA1-1FAD-44AD-B27B-907206072C7D}</Project>
+      <Name>CodeHelper.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

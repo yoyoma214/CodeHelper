@@ -1,0 +1,15 @@
+E:\20140126\CodeHelper\DataModel\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\DataModel\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\20140126\CodeHelper\DataModel\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\20140126\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.Properties.Resources.resources
+E:\20140126\CodeHelper\Output\CordeHelper.Domain.Controller.dll
+E:\20140126\CodeHelper\Output\CordeHelper.Domain.Controller.pdb
+E:\20140126\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.dll
+E:\20140126\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.pdb
+D:\workspace\CodeHelper\Output\CordeHelper.Domain.Controller.dll
+D:\workspace\CodeHelper\Output\CordeHelper.Domain.Controller.pdb
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.csprojResolveAssemblyReference.cache
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.Properties.Resources.resources
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.csproj.GenerateResource.Cache
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.dll
+D:\workspace\CodeHelper\DataModel\obj\x86\Debug\CordeHelper.Domain.Controller.pdb

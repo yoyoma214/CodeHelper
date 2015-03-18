@@ -1,0 +1,15 @@
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\App.config
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\CodeHelper.Domain.dll.config
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\CodeHelper.Domain.dll
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\CodeHelper.Domain.pdb
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\CodeHelper.Data.dll
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\EntityFramework.dll
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\CodeHelper.Data.pdb
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\bin\x86\TestWF\EntityFramework.xml
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\obj\x86\TestWF\CodeHelper.Domain.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\obj\x86\TestWF\CodeHelper.Domain.dll
+D:\workspace\20140311\CodeHelper\CodeHelper.Domain\obj\x86\TestWF\CodeHelper.Domain.pdb
+D:\workspace\20140311\CodeHelper\WorkflowSite\bin\App.config
+D:\workspace\20140311\CodeHelper\WorkflowSite\bin\CodeHelper.Domain.dll.config
+D:\workspace\20140311\CodeHelper\WorkflowSite\bin\CodeHelper.Domain.dll
+D:\workspace\20140311\CodeHelper\WorkflowSite\bin\CodeHelper.Domain.pdb

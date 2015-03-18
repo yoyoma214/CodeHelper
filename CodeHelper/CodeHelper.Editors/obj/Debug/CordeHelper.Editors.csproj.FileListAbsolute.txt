@@ -1,0 +1,10 @@
+E:\20140126\CodeHelper\Editors\obj\Debug\ResolveAssemblyReference.cache
+E:\20140126\CodeHelper\Output\CordeHelper.Editors.dll
+E:\20140126\CodeHelper\Output\CordeHelper.Editors.pdb
+E:\20140126\CodeHelper\Editors\obj\Debug\CordeHelper.Editors.dll
+E:\20140126\CodeHelper\Editors\obj\Debug\CordeHelper.Editors.pdb
+D:\workspace\CodeHelper\Output\CordeHelper.Editors.dll
+D:\workspace\CodeHelper\Output\CordeHelper.Editors.pdb
+D:\workspace\CodeHelper\Editors\obj\Debug\CordeHelper.Editors.dll
+D:\workspace\CodeHelper\Editors\obj\Debug\CordeHelper.Editors.pdb
+D:\workspace\CodeHelper\Editors\obj\Debug\CordeHelper.Editors.csprojResolveAssemblyReference.cache
