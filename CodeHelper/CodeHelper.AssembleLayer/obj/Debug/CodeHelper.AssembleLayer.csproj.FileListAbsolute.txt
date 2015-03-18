@@ -31,3 +31,8 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\Output\CodeHelper.Ass
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.AssembleLayer\obj\Debug\CodeHelper.AssembleLayer.csprojResolveAssemblyReference.cache
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.AssembleLayer\obj\Debug\CodeHelper.AssembleLayer.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.AssembleLayer\obj\Debug\CodeHelper.AssembleLayer.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.AssembleLayer.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.AssembleLayer.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.AssembleLayer\obj\Debug\CodeHelper.AssembleLayer.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.AssembleLayer\obj\Debug\CodeHelper.AssembleLayer.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.AssembleLayer\obj\Debug\CodeHelper.AssembleLayer.pdb

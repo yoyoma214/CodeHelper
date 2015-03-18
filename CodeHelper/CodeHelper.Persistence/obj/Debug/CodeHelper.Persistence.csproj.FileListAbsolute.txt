@@ -44,3 +44,8 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\Output\CodeHelper.Per
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Persistence\obj\Debug\CodeHelper.Persistence.csprojResolveAssemblyReference.cache
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Persistence\obj\Debug\CodeHelper.Persistence.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Persistence\obj\Debug\CodeHelper.Persistence.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Persistence.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Persistence.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Persistence\obj\Debug\CodeHelper.Persistence.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Persistence\obj\Debug\CodeHelper.Persistence.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Persistence\obj\Debug\CodeHelper.Persistence.pdb

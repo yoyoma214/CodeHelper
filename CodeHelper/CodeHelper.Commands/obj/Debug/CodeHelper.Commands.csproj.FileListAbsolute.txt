@@ -31,3 +31,8 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\Output\CodeHelper.Com
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Commands\obj\Debug\CodeHelper.Commands.csprojResolveAssemblyReference.cache
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Commands\obj\Debug\CodeHelper.Commands.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Commands\obj\Debug\CodeHelper.Commands.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Commands.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Commands.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Commands\obj\Debug\CodeHelper.Commands.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Commands\obj\Debug\CodeHelper.Commands.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Commands\obj\Debug\CodeHelper.Commands.pdb

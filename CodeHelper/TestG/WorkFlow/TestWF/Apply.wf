@@ -1,0 +1,91 @@
+		namespace TestWF;
+		
+		class OrderInfo
+		{
+			Guid Id;
+			DateTime? CreateTime;
+			string ProductCode;
+			string Address;
+			List<OrderDetail> Details;
+		}  
+		class OrderDetail
+		{ 
+			string ProductCode; 
+			float? Price;
+			int? count;
+		}
+		string name = "cqy";
+		int age = 30;
+		OrderInfo orderInfo ;
+		           
+	init:  
+		age = 40;		  		
+	node input:  
+	 
+		class OrderInfo2
+		{
+			Guid Id; 
+			DateTime? CreateTime;
+			string ProductCode;
+			string Address;
+			List<OrderDetail2> Details;
+			OrderDetail OrderDetail;
+			OrderDetail OrderDetail2;
+		}
+		class OrderDetail2
+		{
+			string ProductCode;
+			float? Price;
+			int? count;
+		}
+				 
+		translation:
+		parent.age > 30 ==> approve1;
+		parent.age == 30 ==> input;		
+		   
+	node approve1:
+		action:
+			after:
+			 
+		translation:
+			true ==> approve2;  
+			 
+	node approve2: 
+		translation:
+		parent.age > 30 ==> approve3;
+		
+	node approve3:
+			ref_workflow : "Finance"
+			translation:
+				parent.age > 30 ==> a;
+			 	 
+	parallel a:
+	begin	
+		translation:
+			true ==>final;
+		line line1: 
+			node a1:
+				init:
+					parent.age = 10;
+				translation:
+					true==>a2;
+			node a2:
+				init:
+					parent.age = 10;
+				translation:
+					 
+				
+		line line2:
+			node b1:
+				init:
+					parent.age = 10;
+				translation:
+					true==>b2;	
+			node b2:
+				init:
+					parent.age = 10;
+				translation:				
+	end 
+	
+	node final:
+			

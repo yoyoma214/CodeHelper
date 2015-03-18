@@ -1,0 +1,43 @@
+Area1:
+	
+[edit("Cms.Order")]
+class OrderInfo
+{
+	int Id{iskey="true"};
+	Int32? CreatorId{control="select",validate="require"};
+	Int32? MenderId{control="select",validate="require,int"};
+	Int32? TabModuleID{field="TableModleId"};
+	String Title{datasource="/data/titles", para_date="2014/4/1",key="name",value="id"};
+	String Title1;
+	String Tag{datasource="男,M;女,F"};
+	String Content;
+	DateTime OrderTime;
+}
+
+$.Title.Enabled = ($.CreatorId.Value > 10 && $.Tag.Value.Length > 0);
+ 
+$.Tag.Visible = true;
+
+$.Tag.Value = "123";
+ 
+string a = ""; 
+   
+$.Tag.Value = a;
+$.Title.DataSource.Paras.Year = $.OrderTime.Year;
+
+$.Content.Changed ==>{
+	$.Tag.Visible=false; 
+	$.Title.Visible = false; 
+}
+ 
+$.CreatorId.Value == 1 ==>
+{
+	$.Tag.Visible=false; 
+}
+
+$.OrderTime.Changed ==>{
+	$.Title.DataSource.Bind();
+}
+
+$.Tag.Value <== $.Title.Value + $.Content.Value;
+

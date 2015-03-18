@@ -36,3 +36,9 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\Output\CodeHelper.Dom
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Model\obj\Debug\CodeHelper.Domain.Model.csprojResolveAssemblyReference.cache
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Model\obj\Debug\CodeHelper.Domain.Model.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Model\obj\Debug\CodeHelper.Domain.Model.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\App.config
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Domain.Model.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Domain.Model.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Model\obj\Debug\CodeHelper.Domain.Model.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Model\obj\Debug\CodeHelper.Domain.Model.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Model\obj\Debug\CodeHelper.Domain.Model.pdb

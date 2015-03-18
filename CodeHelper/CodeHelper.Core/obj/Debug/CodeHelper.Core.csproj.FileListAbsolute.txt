@@ -39,3 +39,11 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Core\obj\D
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.csproj.GenerateResource.Cache
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Core.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Core.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.Properties.Resources.resources
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.UI.FindFrm.resources
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.csproj.GenerateResource.Cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Core\obj\Debug\CodeHelper.Core.pdb

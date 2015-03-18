@@ -52,3 +52,9 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Common\obj
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.g.resources
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Common.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Common.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.g.resources
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Common\obj\Debug\CodeHelper.Common.pdb

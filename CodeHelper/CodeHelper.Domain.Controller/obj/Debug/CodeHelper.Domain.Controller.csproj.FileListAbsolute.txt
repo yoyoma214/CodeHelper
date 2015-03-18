@@ -40,3 +40,11 @@ D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Con
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.csproj.GenerateResource.Cache
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.dll
 D:\workspace\20140311\CodeHelper\4.Presentation\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\App.config
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Domain.Controller.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\Output\CodeHelper.Domain.Controller.pdb
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.csprojResolveAssemblyReference.cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.Properties.Resources.resources
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.csproj.GenerateResource.Cache
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.dll
+D:\workspace\20140311\Test\CodeHelper\CodeHelper\CodeHelper.Domain.Controller\obj\Debug\CodeHelper.Domain.Controller.pdb
